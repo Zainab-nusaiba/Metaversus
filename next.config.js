@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  distDir: "build",
   experimental: {
     appDir: true,
+    unoptimized: true,
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
